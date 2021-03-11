@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o dist"
+    "build-storybook": "build-storybook -o dist",
+    "deploy-storybook": "storybook-to-ghpages",
+    "chromatic": "chromatic -o dist"
   },
   "dependencies": {
     "core-js": "^3.9.1",
@@ -22,8 +24,10 @@
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
     "@storybook/react": "^6.1.21",
+    "@storybook/storybook-deployer": "^2.8.7",
     "@types/react": "^17.0.3",
     "@types/styled-components": "^5.1.7",
-    "babel-loader": "^8.2.2"
+    "babel-loader": "^8.2.2",
+    "chromatic": "^5.6.3"
   }
 }
