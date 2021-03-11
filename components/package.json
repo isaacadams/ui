@@ -1,6 +1,6 @@
 {
-  "name": "components",
-  "version": "1.0.0-preview",
+  "name": "@isaacadams/components",
+  "version": "1.0.0",
   "main": "./Loader.tsx",
   "peerDependencies": {
     "react": "17.0.1",
