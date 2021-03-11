@@ -1,13 +1,14 @@
 {
   "name": "@isaacadams/components",
-  "version": "1.0.0",
-  "main": "./Loader.tsx",
+  "version": "1.0.0-rc.3",
+  "main": "lib/index.js",
   "peerDependencies": {
     "react": "17.0.1",
     "styled-components": "5.2.1"
   },
   "files": [
-    "./*"
+    "lib",
+    "package.json"
   ],
   "scripts": {
     "test": "echo hello world"

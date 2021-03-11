@@ -4,11 +4,23 @@
   "workspaces": [
     "components"
   ],
+  "source": "components/index.ts",
+  "types": "components/lib/index.d.ts",
+  "lib": "index.js",
+  "targets": {
+    "lib": {
+      "context": "node",
+      "includeNodeModules": false,
+      "isLibrary": true,
+      "distDir": "components/lib"
+    }
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o dist",
     "deploy-storybook": "storybook-to-ghpages",
-    "chromatic": "chromatic -o dist"
+    "chromatic": "chromatic -o dist",
+    "build": "parcel build components/index.ts"
   },
   "dependencies": {
     "core-js": "^3.9.1",
@@ -22,6 +34,8 @@
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@mdx-js/react": "^1.6.22",
+    "@parcel/packager-ts": "^2.0.0-nightly.625",
+    "@parcel/transformer-typescript-types": "^2.0.0-nightly.625",
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-docs": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
@@ -31,6 +45,8 @@
     "@types/react": "^17.0.3",
     "@types/styled-components": "^5.1.7",
     "babel-loader": "^8.2.2",
-    "chromatic": "^5.6.3"
+    "chromatic": "^5.6.3",
+    "parcel": "^2.0.0-nightly.623",
+    "typescript": "^3.9.9"
   }
 }
