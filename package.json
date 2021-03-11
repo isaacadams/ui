@@ -1,6 +1,9 @@
 {
   "name": "ui",
   "private": true,
+  "workspaces": [
+    "components"
+  ],
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o dist",
